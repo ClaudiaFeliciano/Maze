@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MidTerm Maze</title>
     <link rel="stylesheet" href="./Content/maze.css">
-</body>
+
+    </body>
 </head>
+
 <body>
-    <canvas id="canvas" width="640" height="480"></canvas>
+    <canvas id="canvas" width="800" height="600"></canvas>
+
+    <script src="./node_modules/easeljs/lib/easeljs.min.js"></script>
+    <script src="./node_modules/tweenjs/lib/tweenjs.min.js"></script>
+    <script src="./node_modules/soundjs/lib/soundjs.min.js"></script>
+    <script src="./node_modules/preloadjs/lib/preloadjs.min.js"></script>
+
     
+   <!-- Config Files -->
+  
+   <script src="/Script/config/scene.js"></script>
+   
+   <script src="/Script/config/keyboardkey.js"></script>
+   <script src="/Script/managers/keyboard.js"></script>
+    <script src="/Script/managers/globalVariableGame.js"></script>
+   
+    
+    <script src="/Script/objects/label.js"></script>
+    <script src="/Script/objects/scene.js"></script>  
+    <script src="/Script/objects/abstractGameObject.js"></script>
+    <script src="/Script/objects/button.js"></script>
+    
+
+    <script src="/Script/objects/maze.js"></script>
+    <script src="/Script/objects/player.js"></script>
+    <script src="/Script/scenes/overscene.js"></script>
+    <script src="/Script/scenes/playscene.js"></script>
+    <script src="/Script/scenes/startscene.js"></script>
+    <script src="/Script/core/game.js"></script>
+
+
 </html>
