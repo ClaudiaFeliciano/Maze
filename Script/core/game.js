@@ -7,6 +7,7 @@
     var currentScene;
     var currentState;
     var keyboardManager;
+    var player;
     var assetManifest = [
         { id: "background", src: "./Assets/images/mazebackground.png" },
         { id: "playButton", src: "/Assets/images/PlayButton.png" },
@@ -36,6 +37,9 @@
         managers.GlobalVariableGame.currentState = currentState; //it makes a refrence to my stage and I hold it in my global object
         keyboardManager = new managers.Keyboard();
         managers.GlobalVariableGame.keyboardManager = keyboardManager;
+        managers.GlobalVariableGame.canvas = canvas;
+        player = new objects.Player();
+        managers.GlobalVariableGame.player = player;
         Main();
     }
     // this is the main game loop

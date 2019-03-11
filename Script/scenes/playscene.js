@@ -41,6 +41,8 @@ var scenes;
         PlayScene.prototype.Update = function () {
             this._maze.Update();
             this._player.Update();
+            this._dataImage = new objects.DataImage();
+            managers.GlobalVariableGame.dataImage = this._dataImage;
             //this._island.Update();
             //check collision between arrow and island
             //managers.Collision.Check(this._player, this._island);

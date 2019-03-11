@@ -12,6 +12,7 @@ var managers;
             switch (event.keyCode) {
                 case config.Keys.W:
                 case config.Keys.UP_ARROW:
+                    console.log(managers.GlobalVariableGame.dataImage.canMoveTo(managers.GlobalVariableGame.player.x, managers.GlobalVariableGame.player.y));
                     this.moveForward = true;
                     break;
                 case config.Keys.A:

@@ -5,7 +5,6 @@ module managers {
         public moveBackward: boolean;
         public moveLeft: boolean;
         public moveRight: boolean;
-
        
         public enable: boolean; //turn off my keyboard
        
@@ -26,6 +25,8 @@ module managers {
                
                 case config.Keys.W: 
                 case config.Keys.UP_ARROW:
+                console.log(managers.GlobalVariableGame.dataImage.canMoveTo( managers.GlobalVariableGame.player.x, managers.GlobalVariableGame.player.y ));
+
                     this.moveForward = true;
                     break;
 
@@ -51,7 +52,7 @@ module managers {
                
                 case config.Keys.W: 
                 case config.Keys.UP_ARROW:
-                    this.moveForward = false;
+                this.moveForward = false;
                     break;
 
                 case config.Keys.A:

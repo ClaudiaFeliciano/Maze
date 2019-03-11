@@ -7,6 +7,8 @@
     let currentScene: objects.Scene;
     let currentState: config.Scene;
     let keyboardManager: managers.Keyboard;
+    let player: objects.Player;
+   
   
     let assetManifest = [
      
@@ -42,6 +44,11 @@
       managers.GlobalVariableGame.currentState = currentState; //it makes a refrence to my stage and I hold it in my global object
       keyboardManager = new managers.Keyboard();
       managers.GlobalVariableGame.keyboardManager = keyboardManager;
+     
+      managers.GlobalVariableGame.canvas = canvas;
+       player= new objects.Player();
+       managers.GlobalVariableGame.player= player;
+
       Main();
     }
   

@@ -8,7 +8,7 @@ module scenes {
         //private _meteorNum: number;
         //private _meteor: objects.Meteor[];
 
-        //private _scoreBoard: managers.ScoreBoard;
+        private _dataImage: objects.DataImage;
 
         private _engineSound: createjs.AbstractSoundInstance;//keeeps track  of my sound as i make it if i want to stops it or to modify the volumen
 
@@ -45,6 +45,8 @@ module scenes {
         public Update(): void {
             this._maze.Update();
             this._player.Update();
+            this._dataImage= new objects.DataImage();
+            managers.GlobalVariableGame.dataImage= this._dataImage;
             //this._island.Update();
 
             //check collision between arrow and island

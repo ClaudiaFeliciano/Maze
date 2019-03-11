@@ -5,6 +5,12 @@ module managers {
         public static stage:createjs.Stage; //access to my global stage object
         public static currentState:config.Scene; ;// wich current scene is
         public static keyboardManager : managers.Keyboard;
+        public static currentScene: number;  
+        public static canvas: HTMLCanvasElement;
+        public static maze: objects.Maze;
+        public static dataImage: objects.DataImage;
+        public static player: objects.Player;
+
 
     }
 }
